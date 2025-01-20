@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+h1,
+h2 {
+  font-family: "Open Sans";
+}
+body {
+  height: auto;
+  /* overflow: hidden; */
+}
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-size: contain;
+  background-color: hsl(193, 100%, 96%);
+}
+header .one {
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+  /* margin-bottom: 50px; */
+}
+header .one svg {
+  transform: scale(0.7);
+}
+header .one span {
+  padding: 10px;
+  background-color: #fff;
+}
+header .two {
+  height: 100%;
+  /* height: auto; */
+  display: flex;
+  /* gap: 20px; */
+}
+header .left {
+  width: 45%;
+  padding: 4% 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5%;
+}
+header .left h1 {
+  font-size: 2.6rem;
+}
+header .left p {
+  font-size: 1rem;
+  padding-right: 3px;
+}
+button {
+  padding: 15px;
+  width: 250px;
+  border-radius: 30px;
+  font-size: 15px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.249);
+  cursor: pointer;
+}
+button:hover,button:active{
+    background-color:hsl(322, 92%, 72%) ;
+}
+header .right {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  width: 55%;
+  margin-right: 5%;
+  /* padding-right: 15%; */
+  background-image: url(./images/illustration-mockups.svg);
+  background-size: 90%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+header .right svg {
+  transform: scale(0.6);
+  margin-right: 22%;
+  /* object-fit: cover; */
+}
+main {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 3% 11%;
+}
+main h2 {
+  font-size: 1.7rem;
+}
+main p {
+  font-size: 17px;
+}
+main > div {
+  width: 100%;
+  height: 420px;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.079);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 15%; */
+}
+main > div .left {
+  width: 65%;
+  padding: 12% 11%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main > div .right {
+  width: 35%;
+  /* padding: 2%; */
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+main .one .right {
+  background-image: url(./images/illustration-grow-together.svg);
+}
+main .two .left {
+  /* align-items: flex-end; */
+  padding: 12% 4% 0 17%;
+}
+main .two .right {
+  background-image: url(./images/illustration-flowing-conversation.svg);
+  background-position: right;
+}
+main .three .right {
+  background-image: url(./images/illustration-your-users.svg);
+}
+footer {
+  height: 75vh;
+  display: flex;
+  gap: 3%;
+  padding: 0  2% 0 8%;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  position: relative;
+}
+footer .one,
+footer .four {
+  width: 30%;
+}
+footer .two,
+footer .three {
+  width: 20%;
+  font-size: 18px;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+footer path {
+  fill: white;
+}
+footer .one {
+  gap: 8%;
+  width: 45%;
+}
+footer .one div{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    gap: 9%;
+}
+footer .one svg{
+    vertical-align: bottom;
+}
+footer .two{
+    margin-left: 11%;
+}
+footer .icons {
+  display: flex;
+  gap: 20px;
+}
+footer a {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 50%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer a:hover,
+footer a:active,
+footer a:hover i,
+footer a:active i {
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+}
+
+footer .four {
+  display: flex;
+  flex-direction: column;
+  gap: 13%;
+  height: 100%;
+}
+footer .four p{
+    font-size: 13px;
+    margin-top: 50%;
+    margin-bottom: -50%;
+}
+
+main{
+    margin-bottom: 30vh;
+}
+
+.popup{
+    position: absolute;
+    top: -30%;
+    left: 30%;
+    width: 600px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.218);
+}
+.popup button{
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border: none;
+    
+}
+
+footer .two span:hover,footer .two span:active,footer .three p:hover,footer .three p:active{
+    text-decoration: underline;
+    cursor: pointer;
+}
