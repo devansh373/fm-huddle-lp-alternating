@@ -23,15 +23,22 @@ header {
 header .one {
   display: flex;
   justify-content: space-between;
-  padding: 4%;
+  padding: 4% 6%;
   /* margin-bottom: 50px; */
 }
 header .one svg {
-  transform: scale(0.7);
+  transform: scale(0.8);
 }
 header .one span {
-  padding: 10px;
+  padding: 10px 50px;
   background-color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.079);
+}
+header .one span:hover,header .one span:active{
+    color: gray;
+    cursor: pointer;
 }
 header .two {
   height: 100%;
