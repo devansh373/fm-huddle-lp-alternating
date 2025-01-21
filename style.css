@@ -233,7 +233,7 @@ main{
 .popup{
     position: absolute;
     top: -30%;
-    left: 30%;
+    right: 20%;
     width: 600px;
     height: 250px;
     border-radius: 15px;
@@ -253,4 +253,168 @@ main{
 footer .two span:hover,footer .two span:active,footer .three p:hover,footer .three p:active{
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width:1090px){
+    header{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    header .two .left {
+        gap: 20px;
+    }
+    header .two .left h1{
+        font-size: 2.4rem;
+    }
+    .popup{
+        width: 500px;
+        height: 200px;
+        right: 23%;
+    }
+    .popup h1{
+        font-size: 1.6rem;
+    }
+    .popup button{
+        padding: 17px;
+    }
+    footer{
+        padding-top: 12%;
+    }
+    footer .two{
+        margin-left: 7%;
+    }
+}
+@media (max-width:700px){
+    header .two{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+    header .two >div{
+        width: 100%;
+    }
+    header .two .left{
+        height: 400px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        gap: 25px;
+    }
+    header .left h1{
+        padding: 0 15%;
+    }
+    header .left p{
+        padding: 0 15%;
+        font-size: 1.2rem;
+    }
+    header .right{
+        margin: 0;
+        height: 400px;
+        background-size: contain;
+    }
+    main>div{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+main>div>.right{
+    height: 200px;
+    background-size: contain;
+}
+main>div>.left{
+    padding: 12% 1% !important;
+}
+main>.two{
+    flex-direction: column;
+}
+main>.three>.left{
+    padding: 12% 3% 12% 2% !important;
+}
+.popup{
+    width: 70% !important;
+    height: 250px;
+    left: 14%;
+    top: -25%;
+
+}
+.popup h1{
+    /* font-size: 1.1rem; */
+}
+.popup button{
+    padding: 17px;
+}
+footer{
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 30px;
+    /* align-items: center; */
+}
+footer>div{
+    width: 100% !important;
+    justify-content: center;
+    gap: 30px !important;
+}
+footer .one{
+    width: 70% !important;
+    margin-top: 5%;
+}
+footer .two{
+    margin: 0;
+}
+footer .four{
+    align-items: center;
+}
+footer .four p{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (max-width:500px){
+    header{
+        padding:  30px;
+    }
+    header .one{
+        padding: 4% 0;
+    }
+
+    header .one svg{
+transform: scale(0.5);
+margin-left: -14%;
+    }
+    header .one span{
+        width: 130px;
+        height: 40px;
+        padding: 10px 0 0 32px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    header .two .left,header .two .left h1,header .two .left p{
+        padding: 0;
+    }
+    main>div>.left{
+        width: 80%;
+        padding: 5% 0 !important;
+    }
+    .popup{
+        width: 350px !important;
+        height: 150px;
+        left: 3%;
+        top: -11%;
+    }
+    .popup h1{
+        font-size: 1.2rem;
+    }
+    .popup button{
+        width: 200px;
+        padding: 11px;
+    }
+    footer .one{
+        margin-top: 18% !important;
+    }
 }
